@@ -1337,7 +1337,7 @@ header.card-header {
     }
 }
 .contact-form-block {
-    background: rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255);
     position: relative;
     padding: 3em;
     border-radius: 30px;
@@ -1345,8 +1345,9 @@ header.card-header {
 
 .contact-form-block div h2 {
     color: #0F1527;
-    padding-top: 50px;
+    padding-top: 10px;
     text-align: center;
+    padding-top: 50px;
 }
 
 .whatsapp-icon img {
