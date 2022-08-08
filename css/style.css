@@ -1337,7 +1337,7 @@ header.card-header {
     }
 }
 .contact-form-block {
-    background: rgba(255, 255, 255);
+    background: linear-gradient(to bottom, #ffffff 0%, #dbe7ff 51%, #bdd0f7 100%);
     position: relative;
     padding: 3em;
     border-radius: 30px;
