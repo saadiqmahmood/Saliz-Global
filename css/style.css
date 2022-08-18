@@ -74,6 +74,7 @@ Version: 1.0
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
+    background-color: #0F1527;
 }
 h1,
 h2,
@@ -153,12 +154,13 @@ ol {
 ============================================================================= */
 .section-block{
     padding: 80px 0;
-    background: #0F1527
+    background: #0F1527;
 }
 .section-header-style2{
     text-align: center;
     padding: 5em;
 }
+
 .section-header h2 {
     font-size: 34px;
     font-weight: 500;
@@ -166,11 +168,13 @@ ol {
     color: white;
     margin-bottom: 15px;
     text-transform: capitalize;
+    text-align: center;
 }
 .section-header p {
     font-size: 15px;
     font-weight: 300;
     margin-bottom: 0;
+    text-align: center;
 }
 .section-header-style2 h2{
     font-size: 30px;
@@ -213,6 +217,98 @@ ol {
     color: #343333;
     padding: 0;
 }
+
+.owl-dots {
+    text-align: center;
+    padding: 30px 0;
+}
+.owl-dot.active, .owl-dot:focus {
+    border: none;
+    outline: none;
+}
+.owl-dot span {
+    width: 12px;
+    height: 7px;
+    border-radius: 15px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background: rgba(30, 35, 193, 0.07);
+    border: none;
+    display: inline-block;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.owl-dot.active span, .start-home-slider .owl-dot.active span {
+    background: #ffffff;
+    width: 25px;
+}
+.owl-nav .owl-prev, .owl-nav .owl-next {
+    background: rgba(255, 255, 255, 0.07) !important;
+    border: none;
+    border-radius: 100%;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0);
+    color: #ffffff !important;
+    height: 40px;
+    line-height: 3;
+    margin: 0 5px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 40px;
+    z-index: 9;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    background-size: 200% auto;
+}
+.blog-slider .owl-nav .owl-next {
+    left: auto;
+    right: -50px;
+}
+.blog-slider .owl-nav .owl-prev {
+    left: -50px;
+    right: auto;
+}
+.owl-nav .owl-prev:hover, .owl-nav .owl-next:hover,
+.owl-nav .owl-prev:focus, .owl-nav .owl-next:focus,
+.review_nav span:hover, .review_nav span:focus{
+    outline: none;
+    color: #fff !important;
+    background: linear-gradient(to right top, #0e3481, #1c479d, #3169d8, #4d7fe2) !important;
+}
+.owl-nav .owl-prev span, .owl-nav .owl-next span {
+    font-size: 12px;
+}
+.theme-btn{
+    background-image:  linear-gradient(to right, #901ec1 0%, #7450fe 51%, #901ec1 100%);
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+    background-size: 200% auto;
+    color: #fff !important;
+    -webkit-box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.1);
+    box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.1);
+}
+.theme-btn:hover {
+    background-position: right center !important;
+}
+.theme-btn-sec{
+    color: #901ec1;
+    background: rgba(144, 30, 193, 0.07);
+    transition: all 500ms;
+}
+.theme-btn-sec:hover {
+    background: linear-gradient(to right, #901ec1 0%, #7450fe 51%, #901ec1 100%);
+    background-size: 200% auto;
+    color: #fff;
+}
+
 .title-box h1 {
     font-size: 50px;
     margin-bottom: 15px;
@@ -671,10 +767,9 @@ ul.list-checked li i {
     background: #1A2037;
     border-radius: 25px;
 }
-.features-style3 .feature-block {
-    padding: 30px;
-    margin-bottom: 30px;
-    text-align: left;
+.features-style3 .section-block {
+    background: #1A2037;
+    border-radius: 25px;
 }
 .features-style3  .feature-block.offset-top{
     transform: translateY(30px);
@@ -712,6 +807,11 @@ ul.list-checked li i {
     text-align: left;
     height: auto;
     border-radius: 0;
+}
+
+.section-block {
+    background: #0F1527;
+    position: relative;
 }
 
 .features-style4 {
@@ -1073,6 +1173,106 @@ header.card-header {
     position: relative;
     background-size: 200% auto;
 }
+
+
+/* ============================================================================= 
+#13. Blog
+============================================================================= */
+#blog {
+    background: linear-gradient(0deg, #f8f9fb 35%, transparent 100%);
+}
+.blog-item {
+    margin: 35px 5px;
+    border-radius: 11px;
+}
+.blog-article {
+    position: relative;
+    box-shadow: 0 10px 20px 0 rgba(0, 51, 204,0.1);
+    overflow: hidden;
+}
+.blog-article.style-2{
+    background: #fff;
+    height: auto;
+    transition: transform .2s;
+}
+.blog-page .blog-article.style-2{
+    height: auto;
+}
+.blog-articl.style-1{
+    padding: 15px;
+}
+
+.img-block {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.blog-article.style-2:hover {
+    transform: scale(1.1);
+
+}
+
+.post-author img {
+}
+.post-author h5{
+    font-size: 16px;
+}
+.blog-article.style-1 .post-author h5{
+    color: #fff;
+}
+.blog-article.style-2 .post-author h5{
+    color: #444;
+}
+.blog-article.style-2 a.btn {
+    padding: 8px 20px;
+    margin-top: 15px;
+}
+.blog-article.style-3 .article-content {
+    display: block;
+    position: relative;
+    text-align: left;
+}
+.blog-article.style-3 .article-content h4 a {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 15px;
+}
+.blog-article.style-3 .article-img img{
+}
+.blog-article.style-3 .article-img::after {
+}
+.blog-article.style-3 .post-author .img-block {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    float: left;
+    line-height: 30px;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+.blog-article.style-3 .post-author h5 {
+    font-size: 13px;
+    display: inline-block;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+.blog-details h1 {
+    font-size: 35px;
+    font-weight: 500;
+}
+.blog-details {
+    color: #77838f;
+    font-size: 16px;
+}
+.blog-author {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0px;
+    margin: 20px 0;
+}
+
 
 /* ============================================================================= 
 #14. Contact
